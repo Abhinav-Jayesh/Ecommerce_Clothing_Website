@@ -1,0 +1,135 @@
+/* Background with a more premium look for fashion-forward theme */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1c1c1c; /* Dark background for a sleek look */
+    background-image: url('https://source.unsplash.com/featured/?luxury-fashion');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+/* Promo Banner */
+.promo-banner {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d4af37; /* Gold text */
+    font-family: 'Poppins', sans-serif;
+}
+
+.promo-banner h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.promo-banner p {
+    font-size: 16px;
+}
+
+/* Styling for the login box */
+.login-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Black box with slight transparency */
+    padding: 40px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Deeper shadow for luxury feel */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Stylish form header with gold color */
+.login-box h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #d4af37; /* Gold color for premium feel */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Social login buttons */
+.social-login {
+    margin-top: 20px;
+    color: #d4af37;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.btn-social {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-google {
+    background-color: #db4437;
+}
+
+/* Login button styling with gold background */
+.btn-login {
+    width: 100%;
+    background-color: #d4af37; /* Gold button */
+    color: #000; /* Black text */
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #b8932e; /* Darker gold on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff6b6b; /* Red error message */
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Text center for footer link */
+p.text-center {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #d4af37; /* Gold text */
+}
+
+p.text-center a {
+    color: #d4af37; /* Gold link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p.text-center a:hover {
+    color: #fff; /* White text on hover */
+    text-decoration: underline;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

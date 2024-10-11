@@ -1,0 +1,193 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color for contrast */
+}
+
+/* Product Detail Container */
+.product-detail-container {
+    padding: 20px;
+    color: white;
+}
+
+/* Loading and Error Messages */
+.loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold color for visibility */
+}
+
+/* Product Title */
+.product-title {
+    font-size: 2.5rem;
+    color: #FFD700; /* Gold color */
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Product Price */
+.product-price {
+    font-size: 2rem;
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* Price Colors */
+.price-gold {
+    color: #FFD700; /* Gold color for main price */
+}
+
+.price-white {
+    color: #ffffff; /* White color for original price */
+}
+
+.price-red {
+    color: #FF4500; /* Red color for discount label */
+}
+
+/* Product Description */
+.product-description {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Product Image */
+.product-image {
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Size Selector */
+.size-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center the size buttons */
+}
+
+.size-btn {
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.size-btn.active {
+    background-color: #FFD700;
+    color: #121212;
+    font-weight: bold; /* Bold active button */
+}
+
+.size-btn:hover {
+    background-color: #FFD700;
+    color: #121212;
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Ripple effect on button click */
+.size-btn::after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 215, 0, 0.4);
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.size-btn:active::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+/* Add to Cart & Wishlist Buttons */
+.btn-danger {
+    background-color: #FF4500;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    flex-grow: 1; /* Allow it to grow */
+}
+
+.btn-danger:hover {
+    background-color: #ff5722;
+    transform: scale(1.05);
+}
+
+.btn-outline-secondary {
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s, border-color 0.3s, transform 0.2s;
+    flex-grow: 1; /* Allow it to grow */
+}
+
+.btn-outline-secondary:hover {
+    color: #ff5722;
+    border-color: #ff5722;
+    transform: scale(1.05);
+}
+
+/* Delivery Options */
+.delivery-options {
+    background-color: #333; /* Darker background for delivery options */
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.delivery-options h5 {
+    color: #FFD700;
+}
+
+/* Delivery Info List */
+.delivery-info {
+    padding-left: 20px;
+}
+
+.delivery-options button {
+    background-color: #FFD700;
+    border: none;
+    color: #121212;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.delivery-options button:hover {
+    background-color: #ffdd00;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-title {
+        font-size: 2rem; /* Adjust title size for mobile */
+    }
+
+    .product-price {
+        font-size: 1.5rem; /* Adjust price size for mobile */
+    }
+}

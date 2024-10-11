@@ -1,0 +1,73 @@
+/* Product_collection.css */
+
+/* General Container Styles */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Product Card Styles */
+.product-card {
+  background-color: #222; /* Dark background for cards */
+  border: 1px solid #333; /* Dark border */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.2s, box-shadow 0.3s; /* Add transition effects */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Increase shadow on hover */
+}
+
+/* Card Body Text Alignment and Color */
+.product-card .card-body {
+  text-align: center; /* Centered text */
+  color: #fff; /* White text color */
+}
+
+/* Product Image Styles */
+.product-card .product-img {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area without distortion */
+  border-top-left-radius: 10px; /* Rounded top corners */
+  border-top-right-radius: 10px; /* Rounded top corners */
+}
+
+/* Button Styles */
+.product-card .btn-gold {
+  background-color: #DAA520; /* Gold background for button */
+  border: none; /* Remove border */
+  color: #000; /* Black text color */
+  font-weight: bold; /* Bold text */
+  margin-top: 10px; /* Margin above button */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.product-card .btn-gold:hover {
+  background-color: #b8860b; /* Darker gold on hover */
+}
+
+/* Card Title Styles */
+.card-title {
+  color: #FFD700; /* Gold color for titles */
+}
+
+/* Card Text Styles */
+.card-text {
+  color: #cccccc; /* Light grey for text */
+}
+
+/* Product Rating Styles */
+.product-rating {
+  margin: 10px 0; /* Margin for rating */
+}
+
+.star {
+  color: #FFD700; /* Gold color for stars */
+  font-size: 18px; /* Size of stars */
+}
+
+.star.filled {
+  color: #FF4500; /* Highlight filled stars */
+}

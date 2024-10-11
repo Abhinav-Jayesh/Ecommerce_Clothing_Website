@@ -1,0 +1,157 @@
+/* Custom Navbar Styling */
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111; /* Dark text for brand */
+}
+
+.brand-text strong {
+    color: #000; /* Dark text for emphasis */
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    color: #111; /* Dark text color */
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    position: relative; /* Required for underline effect */
+    transition: color 0.3s ease;
+}
+
+/* Hover State with Golden Underline */
+.navbar-nav .nav-link:hover {
+    color: goldenrod; /* Color change on hover */
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: goldenrod;
+    transition: width 0.3s ease;
+}
+
+/* On Hover, show underline */
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active Navigation Item */
+/* Removed underline from the active state */
+.navbar-nav .nav-item.active .nav-link {
+    color: goldenrod; /* Make the active link golden by default */
+}
+
+/* Icons Styling */
+.navbar-nav .icons .nav-link {
+    color: #111; /* Dark icon color */
+    padding: 0 10px;
+}
+
+.navbar-nav .icons .nav-link:hover {
+    color: goldenrod; /* Change color on hover */
+}
+
+/* Cart Icon and Amount */
+.cart-link {
+    display: flex;
+    align-items: center;
+    color: #111; /* Dark color */
+    font-weight: 600;
+}
+
+.cart-link i {
+    margin-right: 5px;
+}
+
+.cart-link:hover {
+    color: goldenrod; /* Color change on hover */
+}
+
+/* Search Box */
+.search-box {
+    border: 1px solid goldenrod; /* Border color */
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: auto; /* Adjust width */
+}
+
+.search-box::placeholder {
+    color: #999; /* Placeholder color */
+}
+
+.search-box:focus {
+    outline: none;
+    border-color: goldenrod; /* Border color on focus */
+}
+
+/* Search Button */
+.search-btn {
+    background-color: goldenrod; /* Button color */
+    color: #fff; /* Text color */
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #e6a600; /* Lighter orange on hover */
+}
+
+/* Login Button */
+.login-btn {
+    border: 1px solid goldenrod; /* Border color */
+    background-color: transparent;
+    color: goldenrod; /* Text color */
+    padding: 6px 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: goldenrod; /* Background change on hover */
+    color: #fff; /* Text change on hover */
+}
+
+/* Responsive Toggle Button */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: goldenrod; /* Color for the toggle icon */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .form-inline {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .login-btn {
+        margin-top: 10px;
+    }
+}

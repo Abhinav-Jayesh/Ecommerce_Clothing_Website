@@ -1,0 +1,89 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #000; /* Pure black */
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: gold;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer a {
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: gold;
+}
+
+.footer .social-icons img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer .newsletter input {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 10px;
+    width: 80%;
+}
+
+.footer .newsletter input::placeholder {
+    color: #aaa;
+}
+
+.footer .newsletter input:focus {
+    border-color: gold;
+    outline: none;
+}
+
+.footer .newsletter button {
+    background-color: gold;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    margin-left: -4px;
+}
+
+.footer .newsletter button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #000;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.footer-bottom a {
+    color: gold;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ffcc00;
+}
+
+.footer-bottom .love {
+    color: red;
+}

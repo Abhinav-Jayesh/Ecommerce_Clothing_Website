@@ -1,0 +1,129 @@
+body {
+    background-color: #ffffff;
+    color: #a4a4a4;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .contact-title h2::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: gold;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+  
+  .contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .contact-info h5 {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+  }
+  
+  .contact-info p {
+    color: #b4b4b4;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: gold;
+    margin-bottom: 5px;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: gold;
+    outline: none;
+  }
+  
+  .send-button {
+    background-color: black;
+    color: gold;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: gold;
+    color: black;
+  }
+  
+  /* Map Section */
+  .map-container {
+    height: 400px;
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .map {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-title h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-info h5 {
+      font-size: 1.2rem;
+    }
+  
+    .contact-info p {
+      font-size: 0.9rem;
+    }
+  }
+  

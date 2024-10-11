@@ -1,0 +1,219 @@
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid goldenrod; /* Light grey border */
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    position: relative; /* For positioning the floating label */
+}
+
+/* Header and text styles */
+.signup-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: goldenrod;
+    letter-spacing: 1px; /* Creative touch */
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Input label styles */
+.form-label {
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Input group styles */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group-text {
+    background-color: goldenrod; /* Gold background for icons */
+    border: none;
+    color: #000;
+    border-radius: 26px 0 0 26px;
+}
+
+/* Input styles */
+.form-control {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 26px;
+    border: 1px solid #fff; /* White border */
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* White text */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control::placeholder {
+    color: #bbb; /* Light grey placeholder */
+}
+
+/* Focus styles for inputs */
+.form-control:focus {
+    border-color: goldenrod;
+    box-shadow: 0 0 5px goldenrod;
+}
+
+/* Button styles */
+.btn-signup {
+    width: 100%;
+    background: linear-gradient(90deg, goldenrod, #f5c85b);
+    color: #000; /* Black text */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-signup:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #f5c85b, goldenrod);
+}
+
+/* Social buttons styling */
+.social-signup {
+    margin-top: 20px;
+    text-align: center;
+    color: goldenrod; /* White text */
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+.btn-social {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-facebook {
+    background-color: #3b5998; /* Facebook color */
+}
+
+.btn-google {
+    background-color: #db4437; /* Google color */
+}
+
+/* Error and success message styling */
+.error-message {
+    color: #ff4d4d; /* Red error message */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.success-message {
+    color: #4CAF50; /* Green success message */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Divider style */
+.divider {
+    border-top: 1px dashed goldenrod;
+    margin: 20px 0;
+}
+
+/* Text center style */
+p.text-center {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+p.text-center a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p.text-center a:hover {
+    text-decoration: underline;
+    color: #ddd; /* Lighter grey on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-link {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .signup-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .signup-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn-signup {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .signup-container {
+        margin: 10px auto;
+    }
+
+    .signup-container h3 {
+        font-size: 1.3rem;
+    }
+
+    .btn-signup {
+        font-size: 13px;
+    }
+
+    .form-control {
+        font-size: 13px;
+    }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
